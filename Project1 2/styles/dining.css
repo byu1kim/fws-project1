@@ -1,0 +1,95 @@
+.dining .banner {
+  width: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2014/09/17/20/26/restaurant-449952_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.dining .banner::after {
+  content: "";
+  width: 100%;
+  height: inherit;
+  background-color: black;
+  position: absolute;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.detail {
+  padding-bottom: 30px;
+  margin: 20px;
+}
+
+.dining img {
+  margin-top: 50px;
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.dining h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.dining h5 {
+  padding-bottom: 20px;
+}
+
+.tags {
+  margin-bottom: 30px;
+}
+
+.dining span {
+  height: 100%;
+  color: gray;
+  background-color: rgb(223, 223, 223);
+  margin: 10px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+.dining h5 {
+  margin: 10px;
+}
+
+.detail i {
+  color: red;
+}
+
+@media only screen and (min-width: 768px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .list article {
+    max-width: 768px;
+    height: inherit;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+  }
+
+  .list .image {
+    grid-column: span 1;
+    height: 100%;
+  }
+
+  .list img{
+    margin: 0;
+    height: 100%;
+
+  }
+  .list .detail {
+    grid-column: span 2;
+  }
+
+}
